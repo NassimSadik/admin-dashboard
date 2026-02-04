@@ -1,6 +1,28 @@
-* {
-  padding: 0;
+body,
+html {
+  height: 100%;
   margin: 0;
   box-sizing: border-box;
 }
 
+.container {
+  text-align: center;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+header {
+  background-color: #006157;
+  grid-column: 2 / end;
+}
+
+aside {
+  background-color: #005b94;
+  grid-row: 1 / end;
+}
+
+main {
+  background-color: yellow;
+}

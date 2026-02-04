@@ -9,14 +9,40 @@
   <body>
     <div class="container">
       <header>
-        <div class="search"></div>
-        <div class="user-info"></div>
-        <div class="welcome-user"></div>
-        <div class="header-buttons"></div>
+        <div class="search-container">
+          <label for="search">
+            <img
+              class="icons"
+              src="./assets/icons/search.svg"
+              alt="magnifying glass"
+            />
+          </label>
+          <input type="search" name="search" id="search" />
+        </div>
+        <div class="user-info">
+          <img class="icons" src="./assets/icons/bell.svg" alt="ringing bell" />
+          <img class="user-avatar" src="assets/avatar.png" alt="" />
+          <p><strong>Morgan Oakley</strong>y</p>
+        </div>
+        <div class="welcome-user">
+          <img
+            class="user-avatar"
+            src="assets/avatar.png"
+            alt="avatar chosen by user"
+          />
+          <div>
+            <p>Hi there,</p>
+            <h2>Morgan Oakley (@morgan)</h2>
+          </div>
+        </div>
+        <div class="header-buttons">
+          <button class="btn">New</button>
+          <button class="btn">Upload</button>
+          <button class="btn">Share</button>
+        </div>
       </header>
       <aside>
-        <div class="header">
-        </div>
+        <div class="header"></div>
         <div class="navigation"></div>
         <div class="utilities"></div>
       </aside>

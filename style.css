@@ -1,8 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body,
 html {
   height: 100%;
-  margin: 0;
-  box-sizing: border-box;
 }
 
 .container {
@@ -18,9 +22,79 @@ header {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 2fr;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
 }
 
-div {
+.search-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 18px;
+  padding: 0 30px;
+}
+
+.icons {
+  height: 24px;
+}
+
+#search {
+  height: 24px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 10px;
+}
+
+.user-info {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  justify-items: end;
+  gap: 30px;
+  padding-right: 20px;
+}
+
+.user-avatar {
+  max-height: 44px;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.welcome-user {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  align-items: center;
+  text-align: start;
+  gap: 14px;
+  padding-left: 32px;
+}
+
+.welcome-user .user-avatar {
+  max-height: 74px;
+}
+
+.header-buttons {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(31, 139, 215);
+  padding: 8px 18px;
+  border: none;
+  border-radius: 18px;
+}
+
+aside div,
+main div {
   border: 2px solid black;
 }
 
